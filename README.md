@@ -1,2 +1,3 @@
 # metroidivania
-This for the metrodivania month submission
+This repo is for metrodivania month submission
+this is from iitgn
