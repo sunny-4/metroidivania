@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thin tile vert (casual room)_0: 7145831722203510839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

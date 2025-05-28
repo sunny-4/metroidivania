@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Background wall 1 (casual room)_0: -1549850662752093004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

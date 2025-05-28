@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Background wall (prison)_0: -21453137109163229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

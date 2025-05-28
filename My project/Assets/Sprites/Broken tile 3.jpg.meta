@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Broken tile 3_0: -1800179947181039674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
