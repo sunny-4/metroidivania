@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a6d3acbb4341e4641baf9a7af42c2dbf
+guid: 845768e3fe57cd047b362e5b3cce2de6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8013333625801132492
-    second: ground floor walls_0
+      213: -5865334064026303511
+    second: water tile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground floor walls_0
+      name: water tile_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4363e67168beac090800000000000000
-      internalID: -8013333625801132492
+      spriteID: 9e3c6b0aeb52a9ea0800000000000000
+      internalID: -5865334064026303511
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ground floor walls_0: -8013333625801132492
+      water tile_0: -5865334064026303511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
