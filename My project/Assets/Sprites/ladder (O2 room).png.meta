@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e49ec2547a7750e4ab460bb882d039f9
+guid: 0ba173d66453d344da72c520317ce7b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6841534716357562339
-    second: ladder middle room 2 300x300_0
+      213: -3902298707067332275
+    second: ladder (O2 room)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ladder middle room 2 300x300_0
+      name: ladder (O2 room)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1031096c6cfd01a0800000000000000
-      internalID: -6841534716357562339
+      spriteID: d4919cd400048d9c0800000000000000
+      internalID: -3902298707067332275
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ladder middle room 2 300x300_0: -6841534716357562339
+      ladder (O2 room)_0: -3902298707067332275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
