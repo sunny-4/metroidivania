@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thin tile (O2 room)_0: 5430037801357212739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

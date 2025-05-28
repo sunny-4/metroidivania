@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Maze room tile_0: -7711605713488574584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Background wall (No Plot firat floor)_0: -2274409822922075555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
