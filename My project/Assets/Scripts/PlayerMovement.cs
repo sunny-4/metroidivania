@@ -1,73 +1,79 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Interactions;
-using UnityEngine.UIElements;
-
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement Settings")]
     public float moveSpeed = 5f;
+    public float jumpForce = 10f;
+
+    [Header("Ground Check")]
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+
+    private Rigidbody2D rb;
     private Vector2 moveInput;
-    private SpriteRenderer mysprite;
-    // private Animator anim;
-    // private string ANIM = "Walk";
-    private Rigidbody2D mybody;
-    private float jumpforce = 10f;
-    private bool isGrounded = false;
-    // private string ANIMA = "Jump";
+    private bool isGrounded;
+    private SpriteRenderer spriteRenderer;
 
-    public void OnMove(InputValue value) // <-- Correct signature for Send Messages
+    private void Awake()
     {
-        moveInput = value.Get<Vector2>();
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    
-    void Start()
+    private void Update()
     {
-        mysprite = GetComponent<SpriteRenderer>();
-        // anim = GetComponent<Animator>();
-        mybody = GetComponent<Rigidbody2D>();
-    }
-    void Update()
-    {
-        Move();
+        ProcessInput();
         Jump();
     }
 
-    private void Move()
-    {   
-        
+    private void FixedUpdate()
+    {
+        Move();
+    }
 
-        Vector3 movement = new Vector3(moveInput.x, 0f, 0f) * moveSpeed * Time.deltaTime;
-        transform.position += movement;
+    private void ProcessInput()
+    {
+        moveInput = Vector2.zero;
+
+        if (Keyboard.current[Key.A].isPressed || Keyboard.current[Key.LeftArrow].isPressed)
+        {
+            moveInput.x = -1f;
+        }
+        else if (Keyboard.current[Key.D].isPressed || Keyboard.current[Key.RightArrow].isPressed)
+        {
+            moveInput.x = 1f;
+        }
+    }
+
+    private void Move()
+    {
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
         if (moveInput.x < 0)
-        {
-            mysprite.flipX = true;
-        }
-
+            spriteRenderer.flipX = true;
         else if (moveInput.x > 0)
-        {
-            mysprite.flipX = false;
-        }
+            spriteRenderer.flipX = false;
     }
 
     private void Jump()
     {
-        if ((Keyboard.current[Key.W].isPressed || Keyboard.current[Key.UpArrow].isPressed) && isGrounded)
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+
+        if ((Keyboard.current[Key.W].wasPressedThisFrame || Keyboard.current[Key.UpArrow].wasPressedThisFrame) && isGrounded)
         {
-            isGrounded = false;
-            mybody.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Optional: visualize the ground check in editor
+    private void OnDrawGizmosSelected()
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (groundCheck != null)
         {
-            isGrounded = true;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, 0.1f);
         }
     }
 }
-
