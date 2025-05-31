@@ -3264,7 +3264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _connection: {fileID: 0}
   SceneToLoad: Casual room
+
   _spawnPoint: {fileID: 0}
+
 --- !u!1 &238846755
 GameObject:
   m_ObjectHideFlags: 0
@@ -6192,6 +6194,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+
 --- !u!1 &424938411
 GameObject:
   m_ObjectHideFlags: 0
@@ -17651,7 +17654,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _connection: {fileID: 0}
   SceneToLoad: No plot first floor
+
   _spawnPoint: {fileID: 0}
+
 --- !u!1 &1200191451
 GameObject:
   m_ObjectHideFlags: 0
@@ -18053,6 +18058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _connection: {fileID: 0}
   SceneToLoad: Middle room 2
+
   _spawnPoint: {fileID: 0}
 --- !u!1 &1219491578
 GameObject:

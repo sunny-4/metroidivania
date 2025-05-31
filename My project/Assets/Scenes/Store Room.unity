@@ -10935,6 +10935,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+
 --- !u!1 &1067199519
 GameObject:
   m_ObjectHideFlags: 0
@@ -22145,5 +22146,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1473924425}
   - {fileID: 1865924987}
+
   - {fileID: 1794011850889235792}
   - {fileID: 1407976753}
+

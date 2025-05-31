@@ -6,6 +6,7 @@ public class RoomChanger : MonoBehaviour
     [SerializeField] private string SceneToLoad;
     [SerializeField] private Transform _spawnPoint;
 
+
     private void Start()
     {
         if(_connection == LevelConnection._activeConnection)
@@ -20,7 +21,7 @@ public class RoomChanger : MonoBehaviour
         {
             LevelConnection._activeConnection = _connection;
             SceneManager.LoadScene(SceneToLoad);
-            
+
         }
     }
 }
