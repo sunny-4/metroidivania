@@ -2,24 +2,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class RoomChanger : MonoBehaviour
 {
+    [SerializeField] private LevelConnection _connection;
     [SerializeField] private string SceneToLoad;
-    [SerializeField] private float x_pos;
-    [SerializeField] private float y_pos;
+    [SerializeField] private Transform _spawnPoint;
 
-    private Transform player;
 
-    void Start()
+    private void Start()
     {
-        player = GameObject.FindWithTag("Player").transform;
-
+        if(_connection == LevelConnection._activeConnection)
+        {
+            FindFirstObjectByType<PlayerMovement>().transform.position = _spawnPoint.position;
+        }
     }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
+       
         if (collider.CompareTag("Player"))
         {
+            LevelConnection._activeConnection = _connection;
             SceneManager.LoadScene(SceneToLoad);
-            player.position = new Vector3(x_pos, y_pos, 0f);
+
         }
     }
 }
