@@ -5,6 +5,24 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - StoreMiddle1
+  - Middle 1 Changer
+  - Middle1Store
+  - Middle1NoPlot
+  - Middle1Middle2
+  - Middle1Casual
+  - NoPlotMiddle1
+  - CasualSpace
+  - CasualPrison
+  - PrisonCasual
+  - SpaceCasual
+  - Middle2Middle1
+  - Middle2O2
+  - O2Middle2
+  - O2Maze
+  - MazeO2
+  - CasualMiddle1
+  - Wall
   layers:
   - Default
   - TransparentFX
