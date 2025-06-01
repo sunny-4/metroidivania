@@ -60,6 +60,11 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
             mybody.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
         }
+        if ((Keyboard.current[Key.S].isPressed || Keyboard.current[Key.DownArrow].isPressed) && isGrounded)
+        {
+            isGrounded = false;
+            mybody.AddForce(new Vector2(0f, -1*jumpforce), ForceMode2D.Impulse);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
