@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5590355050844630668}
   - component: {fileID: 2783084861636174796}
   - component: {fileID: 8277589239540891482}
+  - component: {fileID: 7044260903393676233}
   m_Layer: 0
   m_Name: Players_0 1
   m_TagString: Player
@@ -207,3 +208,16 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: 0
   m_Camera: {fileID: 0}
+--- !u!114 &7044260903393676233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4945327125843868198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb64abadfdd81745a2898b5949c0d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climbSpeed: 3
