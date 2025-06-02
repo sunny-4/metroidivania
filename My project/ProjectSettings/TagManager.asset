@@ -23,6 +23,7 @@ TagManager:
   - MazeO2
   - CasualMiddle1
   - Wall
+  - Ladder
   layers:
   - Default
   - TransparentFX

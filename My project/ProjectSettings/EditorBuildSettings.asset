@@ -33,5 +33,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Casual room.unity
     guid: 380a4fa22158947bd9e156a2af9ccfa2
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 8790c1174dd4ab74c9dc25a48ee6ad6a, type: 3}
   m_UseUCBPForAssetBundles: 0
