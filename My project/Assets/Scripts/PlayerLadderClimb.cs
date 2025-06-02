@@ -16,7 +16,7 @@ public class PlayerLadderClimb : MonoBehaviour
         if (isClimbing)
         {
             float v = Input.GetAxisRaw("Vertical");
-            rb.velocity = new Vector2(rb.velocity.x, v * climbSpeed);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, v * climbSpeed);
             rb.gravityScale = 0; // Disable gravity while climbing
         }
         else
