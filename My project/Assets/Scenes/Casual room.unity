@@ -11172,7 +11172,7 @@ GameObject:
   - component: {fileID: 459135233}
   m_Layer: 0
   m_Name: Background tile_0 (113)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13161,7 +13161,7 @@ GameObject:
   - component: {fileID: 540594826}
   m_Layer: 0
   m_Name: Background tile_0 (112)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14607,7 +14607,7 @@ GameObject:
   - component: {fileID: 617457810}
   m_Layer: 0
   m_Name: Background tile_0 (152)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15404,7 +15404,7 @@ GameObject:
   - component: {fileID: 636800527}
   m_Layer: 0
   m_Name: Background tile_0 (132)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21986,24 +21986,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &920723488 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4945327125843868198, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
-  m_PrefabInstance: {fileID: 1867576128}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &920723489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 920723488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9050e8cdb436bac4db569f4a1e80f4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gravityStrength: 10
 --- !u!1 &924214831
 GameObject:
   m_ObjectHideFlags: 0
@@ -26678,7 +26660,7 @@ GameObject:
   - component: {fileID: 1087123974}
   m_Layer: 0
   m_Name: Background tile_0 (130)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27459,7 +27441,7 @@ GameObject:
   - component: {fileID: 1117691559}
   m_Layer: 0
   m_Name: Background tile_0 (131)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30670,7 +30652,7 @@ GameObject:
   - component: {fileID: 1262556936}
   m_Layer: 0
   m_Name: Background tile_0 (153)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31237,7 +31219,7 @@ GameObject:
   - component: {fileID: 1326617041}
   m_Layer: 0
   m_Name: Background tile_0 (111)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33532,7 +33514,7 @@ GameObject:
   - component: {fileID: 1425882278}
   m_Layer: 0
   m_Name: Background tile_0 (108)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41829,9 +41811,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1838152946}
   - component: {fileID: 1838152947}
+  - component: {fileID: 1838152950}
+  - component: {fileID: 1838152949}
   m_Layer: 0
   m_Name: ladder (middle)_0
-  m_TagString: Untagged
+  m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41906,6 +41890,79 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1838152949
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838152945}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.5, y: 1.5}
+  m_EdgeRadius: 0
+--- !u!50 &1838152950
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838152945}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1839271267
 GameObject:
   m_ObjectHideFlags: 0
@@ -42274,7 +42331,7 @@ GameObject:
   - component: {fileID: 1861217800}
   m_Layer: 0
   m_Name: Background tile_0 (110)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42504,11 +42561,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.98
+      value: 4.454229
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.16
+      value: 2.9069173
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42548,8 +42605,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4945327125843868198, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 920723489}
+      addedObject: {fileID: 1867576130}
   m_SourcePrefab: {fileID: 100100000, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
+--- !u!1 &1867576129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4945327125843868198, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
+  m_PrefabInstance: {fileID: 1867576128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867576130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867576129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb64abadfdd81745a2898b5949c0d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climbSpeed: 3
 --- !u!1 &1868958180
 GameObject:
   m_ObjectHideFlags: 0
@@ -44364,7 +44439,7 @@ GameObject:
   - component: {fileID: 1953094377}
   m_Layer: 0
   m_Name: Background tile_0 (133)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46219,7 +46294,7 @@ GameObject:
   - component: {fileID: 2040053807}
   m_Layer: 0
   m_Name: Background tile_0 (150)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48587,7 +48662,7 @@ GameObject:
   - component: {fileID: 2140166720}
   m_Layer: 0
   m_Name: Background tile_0 (151)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

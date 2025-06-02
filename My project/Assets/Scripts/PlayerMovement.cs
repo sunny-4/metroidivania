@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     private float jumpforce = 10f;
     private bool isGrounded = false;
     // private string ANIMA = "Jump";
-    [SerializeField] private bool isMaze = false;
 
     public void OnMove(InputValue value) // <-- Correct signature for Send Messages
     {
@@ -37,19 +36,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Move()
-    {
-        Vector3 movement;
-        if (isMaze)
-        {
-            movement = new Vector3(moveInput.x, moveInput.y, 0f) * moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            movement = new Vector3(moveInput.x, 0f, 0f) * moveSpeed * Time.deltaTime;
-        }
+    {   
+        
+
+        Vector3 movement = new Vector3(moveInput.x, 0f, 0f) * moveSpeed * Time.deltaTime;
         transform.position += movement;
-
-
 
         if (moveInput.x < 0)
         {
@@ -60,21 +51,14 @@ public class PlayerMovement : MonoBehaviour
         {
             mysprite.flipX = false;
         }
-
-        
     }
 
     private void Jump()
     {
-        if ((Keyboard.current[Key.W].isPressed || Keyboard.current[Key.UpArrow].isPressed) && isGrounded && !(isMaze))
+        if ((Keyboard.current[Key.W].isPressed || Keyboard.current[Key.UpArrow].isPressed) && isGrounded)
         {
             isGrounded = false;
             mybody.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
-        }
-        if ((Keyboard.current[Key.S].isPressed || Keyboard.current[Key.DownArrow].isPressed) && isGrounded && !(isMaze))
-        {
-            isGrounded = false;
-            mybody.AddForce(new Vector2(0f, -1*jumpforce), ForceMode2D.Impulse);
         }
     }
 
