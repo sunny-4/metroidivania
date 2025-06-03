@@ -23,6 +23,16 @@ TagManager:
   - MazeO2
   - CasualMiddle1
   - Wall
+  - Movebox1
+  - Movebox2
+  - Movebox3
+  - Movebox4
+  - Movebox5
+  - Movebox6
+  - Movebox7
+  - Movebox8
+  - Movebox9
+  - Movebox10
   layers:
   - Default
   - TransparentFX
