@@ -1,86 +1,82 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Interactions;
-using UnityEngine.UIElements;
-
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement Settings")]
     public float moveSpeed = 5f;
+    public float jumpForce = 10f;
+
+    [Header("Ground Check")]
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+
+    private Rigidbody2D rb;
     private Vector2 moveInput;
-    private SpriteRenderer mysprite;
-    // private Animator anim;
-    // private string ANIM = "Walk";
-    private Rigidbody2D mybody;
-    private float jumpforce = 10f;
+    private SpriteRenderer spriteRenderer;
+
     private bool isGrounded = false;
-    // private string ANIMA = "Jump";
     [SerializeField] private bool isMaze = false;
 
-    public void OnMove(InputValue value) // <-- Correct signature for Send Messages
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        ProcessInput();
+        Jump();
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
     }
 
-    
-    void Start()
+    private void ProcessInput()
     {
-        mysprite = GetComponent<SpriteRenderer>();
-        // anim = GetComponent<Animator>();
-        mybody = GetComponent<Rigidbody2D>();
-    }
-    void Update()
-    {
-        Move();
-        Jump();
+        moveInput = Vector2.zero;
+
+        if (Keyboard.current[Key.A].isPressed || Keyboard.current[Key.LeftArrow].isPressed)
+        {
+            spriteRenderer.flipX = true;
+            moveInput.x = -1f;
+        }
+        else if (Keyboard.current[Key.D].isPressed || Keyboard.current[Key.RightArrow].isPressed)
+        {
+            spriteRenderer.flipX = false;
+            moveInput.x = 1f;
+        }
     }
 
     private void Move()
     {
-
-        Vector3 movement;
-        if (isMaze)
-        {
-            movement = new Vector3(moveInput.x, moveInput.y, 0f) * moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            movement = new Vector3(moveInput.x, 0f, 0f) * moveSpeed * Time.deltaTime;
-        }
-        transform.position += movement;
-
-        if (moveInput.x < 0)
-        {
-            mysprite.flipX = true;
-        }
-
-        else if (moveInput.x > 0)
-        {
-            mysprite.flipX = false;
-        }
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
     }
 
     private void Jump()
     {
-        if ((Keyboard.current[Key.W].isPressed || Keyboard.current[Key.UpArrow].isPressed) && isGrounded && !(isMaze))
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+
+        if ((Keyboard.current[Key.W].wasPressedThisFrame || Keyboard.current[Key.UpArrow].wasPressedThisFrame) && isGrounded && !isMaze)
         {
-            isGrounded = false;
-            mybody.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
-        }
-        if ((Keyboard.current[Key.S].isPressed || Keyboard.current[Key.DownArrow].isPressed) && isGrounded && !(isMaze))
-        {
-            isGrounded = false;
-            mybody.AddForce(new Vector2(0f, -1 * jumpforce), ForceMode2D.Impulse);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnDrawGizmosSelected()
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (groundCheck != null)
         {
-            isGrounded = true;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, 0.1f);
         }
     }
 }
-
