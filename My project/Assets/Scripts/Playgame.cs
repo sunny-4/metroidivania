@@ -127,37 +127,37 @@ public class Playgame : MonoBehaviour
         SaveManager.DeleteSave(2);
     }
 
-    public void Savegame()
-    {
-        if (slot == 1)
-        {
-            SaveManager.SaveData player1data = new SaveManager.SaveData();
-            player1data.health = 5;
-            player1data.position = new Vector3(0, 0, 0);
-            player1data.room = "Store Room";
-            player1data.double_jump = false;
-            player1data.swim = false;
-            player1data.fire = false;
-            player1data.key1 = false;
-            player1data.key2 = false;
-            player1data.key3 = false;
+    // public void Savegame()
+    // {
+    //     if (slot == 1)
+    //     {
+    //         SaveManager.SaveData player1data = new SaveManager.SaveData();
+    //         player1data.health = 5;
+    //         player1data.position = new Vector3(0, 0, 0);
+    //         player1data.room = "Store Room";
+    //         player1data.double_jump = false;
+    //         player1data.swim = false;
+    //         player1data.fire = false;
+    //         player1data.key1 = false;
+    //         player1data.key2 = false;
+    //         player1data.key3 = false;
 
-            SaveManager.Save(player1data, 1);
-        }
-        else
-        {
-            SaveManager.SaveData player2data = new SaveManager.SaveData();
-            player1data.health = 5;
-            player1data.position = new Vector3(0, 0, 0);
-            player1data.room = "Store Room";
-            player1data.double_jump = false;
-            player1data.swim = false;
-            player1data.fire = false;
-            player1data.key1 = false;
-            player1data.key2 = false;
-            player1data.key3 = false;
+    //         SaveManager.Save(player1data, 1);
+    //     }
+    //     else
+    //     {
+    //         SaveManager.SaveData player2data = new SaveManager.SaveData();
+    //         player1data.health = 5;
+    //         player1data.position = new Vector3(0, 0, 0);
+    //         player1data.room = "Store Room";
+    //         player1data.double_jump = false;
+    //         player1data.swim = false;
+    //         player1data.fire = false;
+    //         player1data.key1 = false;
+    //         player1data.key2 = false;
+    //         player1data.key3 = false;
 
-            SaveManager.Save(player2data, 2);
-        }
-    }
+    //         SaveManager.Save(player2data, 2);
+    //     }
+    // }
 }
