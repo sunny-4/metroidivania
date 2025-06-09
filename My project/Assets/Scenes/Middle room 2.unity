@@ -56793,10 +56793,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpsNeeded: 3
   sprites:
-  - {fileID: 3424953262656180878, guid: 2b57cb88dc4c34f60b8b24f04c328b22, type: 3}
   - {fileID: -1689862890822862067, guid: 30ca707ec69354df79f71451bfcd9a0a, type: 3}
+  - {fileID: -1865045908968138821, guid: 80dd8f2148eb9e04393f88a4b55a5425, type: 3}
   - {fileID: -1800179947181039674, guid: 0fef93f3636384b48b8be298d755d7f2, type: 3}
-  velocitySampleFrames: 5
+  velocitySampleFrames: 25
 --- !u!1 &1284802926
 GameObject:
   m_ObjectHideFlags: 0
