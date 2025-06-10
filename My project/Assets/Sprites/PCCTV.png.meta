@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 80dd8f2148eb9e04393f88a4b55a5425
+guid: fe8d820656cc24e7e8dcdf0a5b25bc8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1865045908968138821
-    second: broken tile 2.5_0
+      213: 2850909492282779331
+    second: PCCTV_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: broken tile 2.5_0
+      name: PCCTV_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 300
+        width: 1200
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb7982290a60e16e0800000000000000
-      internalID: -1865045908968138821
+      spriteID: 3c6ed461417709720800000000000000
+      internalID: 2850909492282779331
       vertices: []
       indices: 
       edges: []
