@@ -1630,6 +1630,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10fc37c3606d964dba5437361945935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
+  doubleJump: 0
+  swim: 0
+  attack: 0
 --- !u!1001 &134081515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14286,7 +14290,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 5}
   m_EdgeRadius: 0
 --- !u!1 &912100499
 GameObject:
