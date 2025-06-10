@@ -34,7 +34,6 @@ TagManager:
   - Movebox9
   - Movebox10
   - Ladder
-
   layers:
   - Default
   - TransparentFX
@@ -42,7 +41,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -69,11 +68,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 1912420605
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3170306689
     locked: 0
   m_RenderingLayers:
   - Default
