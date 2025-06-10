@@ -3,7 +3,6 @@ using System.IO;
 
 public class SaveManager : MonoBehaviour
 {
-    [System.Serializable]
     public class SaveData
     {
         public int health;
