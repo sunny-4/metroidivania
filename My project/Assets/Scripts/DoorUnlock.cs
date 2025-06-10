@@ -15,7 +15,7 @@ public class DoorUnlock : MonoBehaviour
         {
             if (inventory != null && inventory.UseKey(keyID))
             {
-                door.SetActive(false); // Hide or "open" the door
+                gameObject.SetActive(false); // Hide or "open" the door
                 Debug.Log("Door unlocked!");
             }
             else if (inventory != null)
