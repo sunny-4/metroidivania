@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 80dd8f2148eb9e04393f88a4b55a5425
+guid: 3cd79179e442b41d6aa4120affa1d27d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1865045908968138821
-    second: broken tile 2.5_0
+      213: -9222829344808128510
+    second: WhatsApp Image 2025-06-10 at 10.36.24_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: broken tile 2.5_0
+      name: WhatsApp Image 2025-06-10 at 10.36.24_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 300
+        width: 978
+        height: 967
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb7982290a60e16e0800000000000000
-      internalID: -1865045908968138821
+      spriteID: 200b9a6539de10080800000000000000
+      internalID: -9222829344808128510
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      broken tile 2.5_0: -1865045908968138821
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
