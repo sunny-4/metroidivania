@@ -29,7 +29,7 @@ public class Portal : MonoBehaviour
                 }
                 else
                 {
-                    FindFirstObjectByType<PlayerMovement>().transform.position = new Vector3(-12.98f, -11.11f, 0);
+                    FindFirstObjectByType<PlayerMovement>().transform.position = new Vector3(-0.3f, 10.3f, 0);
                     currentNumber = 1;
                 }
 

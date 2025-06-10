@@ -14711,10 +14711,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4630030325266362917, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4945327125843868198, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_Name
       value: Players_0 1
@@ -15503,10 +15499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef049bcd9036e6e4a9caba94fa1d8081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -0.09734635
-  maxX: 27.26445
-  minY: 0.08
-  maxY: 5.05
 --- !u!1 &1477909472
 GameObject:
   m_ObjectHideFlags: 0
