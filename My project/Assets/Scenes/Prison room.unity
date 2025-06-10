@@ -10508,10 +10508,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Players_0 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5590355050844630668, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 350f002ccfcef274fbe29b6a6e52add0, type: 2}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30.31
@@ -11768,7 +11764,7 @@ GameObject:
   - component: {fileID: 284730721}
   m_Layer: 0
   m_Name: Tile 2 (prison)_0 (26)
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27792,7 +27788,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 350f002ccfcef274fbe29b6a6e52add0, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -38827,7 +38823,7 @@ GameObject:
   - component: {fileID: 1044507391}
   m_Layer: 0
   m_Name: Tile 2 (prison)_0 (27)
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64099,7 +64095,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 350f002ccfcef274fbe29b6a6e52add0, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
