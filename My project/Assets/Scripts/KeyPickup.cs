@@ -8,12 +8,8 @@ public class KeyPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerInventory inventory = other.GetComponent<PlayerInventory>();
-            if (inventory != null)
-            {
-                inventory.AddKey(keyID);
-                Destroy(gameObject);
-            }
+            PlayerInventory.AddKey(keyID); // Call static method directly
+            Destroy(gameObject);
         }
     }
 }

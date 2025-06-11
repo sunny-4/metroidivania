@@ -10514,11 +10514,11 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 350f002ccfcef274fbe29b6a6e52add0, type: 2}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.31
+      value: -28.3
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.58
+      value: 13.6
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10577,10 +10577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10fc37c3606d964dba5437361945935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  doubleJump: 0
-  swim: 0
-  attack: 0
 --- !u!1 &240402789
 GameObject:
   m_ObjectHideFlags: 0

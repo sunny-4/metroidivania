@@ -7,8 +7,6 @@ public class RoomGridManager : MonoBehaviour
     public Sprite[] sprites;         // Assign 5 sprites (0–4) in inspector
     public int conditionSlotIndex = 2; // Slot to be replaced (0–3)
 
-    public PlayerInventory playerInventory;  // Assign this in inspector or find at runtime
-
     void Start()
     {
         // Initialize with first 4 sprites
@@ -17,8 +15,8 @@ public class RoomGridManager : MonoBehaviour
             imageSlots[i].sprite = sprites[i];
         }
 
-        // Check condition
-        if (playerInventory != null && playerInventory.HasKey("No idea"))
+        // Check condition using static call
+        if (PlayerInventory.HasKey("No idea"))
         {
             imageSlots[conditionSlotIndex].sprite = sprites[4];  // Replace with 5th sprite
         }

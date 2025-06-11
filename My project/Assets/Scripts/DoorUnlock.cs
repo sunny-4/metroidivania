@@ -7,18 +7,17 @@ public class DoorUnlock : MonoBehaviour
     public string keyID;         // Set the required key ID in the Inspector
 
     private bool isPlayerNearby = false;
-    private PlayerInventory inventory;
 
     private void Update()
     {
         if (isPlayerNearby && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (inventory != null && inventory.UseKey(keyID))
+            if (PlayerInventory.UseKey(keyID))
             {
                 gameObject.SetActive(false); // Hide or "open" the door
                 Debug.Log("Door unlocked!");
             }
-            else if (inventory != null)
+            else
             {
                 Debug.Log("You need the correct key!");
             }
@@ -30,7 +29,6 @@ public class DoorUnlock : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerNearby = true;
-            inventory = collision.GetComponent<PlayerInventory>();
         }
     }
 
@@ -39,7 +37,6 @@ public class DoorUnlock : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerNearby = false;
-            inventory = null;
         }
     }
 }
