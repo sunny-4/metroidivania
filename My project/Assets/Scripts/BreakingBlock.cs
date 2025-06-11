@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class BreakingBlock: MonoBehaviour
 {
+    public string blockID; // Set this uniquely for each block in Inspector
+
     public int jumpsNeeded = 3;
     public Sprite[] sprites;
     private int jumpCount = 0;
@@ -19,7 +21,14 @@ public class BreakingBlock: MonoBehaviour
         {
             playerRb = player.GetComponent<Rigidbody2D>();
         }
+
+        // Check if block was broken earlier
+        if (PlayerPrefs.GetInt("BlockBroken_" + blockID, 0) == 1)
+        {
+            transform.position = new Vector3(150f, -4.97f, 0); // Or disable if preferred
+        }
     }
+
     private void Update()
     {
         if (playerRb != null)
@@ -67,19 +76,20 @@ public class BreakingBlock: MonoBehaviour
     void RegisterJump()
     {
         if (jumpCount > jumpsNeeded) return;
+
         if (jumpCount == jumpsNeeded)
         {
             transform.position = new Vector3(150f, -4.97f, 0);
-            
+            PlayerPrefs.SetInt("BlockBroken_" + blockID, 1); // Save broken state
+            PlayerPrefs.Save(); // Force save
             return;
         }
+
         GetComponent<SpriteRenderer>().sprite = sprites[jumpCount];
         jumpCount++;
-        
-        //Debug.Log($"Jump {jumpCount} registered");
         playerWasOnButton = true;
-        
     }
+
 
     private bool WasFallingRecently()
     {

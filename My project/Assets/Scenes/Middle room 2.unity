@@ -44491,11 +44491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.88
+      value: -34.14
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: 6676535735753644362, guid: 5854a3869c0680747b21f620f8187e06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57279,7 +57279,6 @@ GameObject:
   - component: {fileID: 1284385262}
   - component: {fileID: 1284385263}
   - component: {fileID: 1284385265}
-  - component: {fileID: 1284385264}
   m_Layer: 0
   m_Name: Broken tile 1_0
   m_TagString: Ground
@@ -57403,21 +57402,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!114 &1284385264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284385260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7b05054a807f8148a004d1b93822b06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpsNeeded: 3
-  sprites: []
-  velocitySampleFrames: 5
 --- !u!114 &1284385265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57430,6 +57414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b05054a807f8148a004d1b93822b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockID: 1
   jumpsNeeded: 3
   sprites:
   - {fileID: -1689862890822862067, guid: 30ca707ec69354df79f71451bfcd9a0a, type: 3}
