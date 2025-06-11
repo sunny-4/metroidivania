@@ -99,6 +99,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private SpriteRenderer mysprite;
     private Rigidbody2D mybody;
+    private Animator anim;
+    private string ANIM = "WALK";
+    // private string ANIMA = "Jump";
     private float jumpforce = 10f;
     private bool isGrounded = false;
     private int jumpCount = 0;
@@ -115,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
     {
         mysprite = GetComponent<SpriteRenderer>();
         mybody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -133,14 +137,25 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             movement = new Vector3(moveInput.x, 0f, 0f) * moveSpeed * Time.deltaTime;
+
         }
 
         transform.position += movement;
 
         if (moveInput.x < 0)
+        {
             mysprite.flipX = true;
+            anim.SetBool(ANIM, true);
+        }
         else if (moveInput.x > 0)
+        {
             mysprite.flipX = false;
+            anim.SetBool(ANIM, true);
+        }
+        else
+        {
+            anim.SetBool(ANIM, false);
+        }
     }
 
     private void HandleJump()
