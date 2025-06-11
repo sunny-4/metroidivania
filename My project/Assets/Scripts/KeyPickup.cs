@@ -4,14 +4,23 @@ public class KeyPickup : MonoBehaviour
 {
     public string keyID;
 
+    void Start()
+    {
+        if (PlayerInventory.HasKey(keyID))
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            PlayerInventory.AddKey(keyID); // Call static method directly
+            PlayerInventory.AddKey(keyID);
             Destroy(gameObject);
         }
     }
 }
+
 
 
