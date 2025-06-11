@@ -4400,8 +4400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c9f1384b2fd574e919bbd8078f9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  doorID: 3
   keyID: Maze
+  hiddenPosition: {x: 9999, y: 9999, z: 0}
 --- !u!61 &297382003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14731,7 +14732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc25e9d0a5485dd419da9871f037ff1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyID: O2 Room
+  keyID: No Idea
 --- !u!4 &949006496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4491860940349172996, guid: 8bf3dac96d322f14d8a7804aee79d880, type: 3}
