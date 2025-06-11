@@ -1,12 +1,30 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
+using System.Collections.Generic;
+
+public class GameStateManager : MonoBehaviour
+{
+    public static HashSet<string> unlockedDoors = new HashSet<string>();
+}
 
 public class DoorUnlock : MonoBehaviour
 {
-    public GameObject door;      // Assign your door GameObject in the Inspector
-    public string keyID;         // Set the required key ID in the Inspector
+    public string doorID;         // Unique ID for this door, set in Inspector
+    public string keyID;          // Required key ID, set in Inspector
+    public Vector3 hiddenPosition = new Vector3(9999, 9999, 0);
 
     private bool isPlayerNearby = false;
+    private Vector3 originalPosition;
+
+    private void Start()
+    {
+        originalPosition = transform.position;
+        // If already unlocked, move door out of the scene
+        if (GameStateManager.unlockedDoors.Contains(doorID))
+        {
+            transform.position = hiddenPosition;
+        }
+    }
 
     private void Update()
     {
@@ -14,8 +32,9 @@ public class DoorUnlock : MonoBehaviour
         {
             if (PlayerInventory.UseKey(keyID))
             {
-                gameObject.SetActive(false); // Hide or "open" the door
-                Debug.Log("Door unlocked!");
+                GameStateManager.unlockedDoors.Add(doorID);
+                transform.position = hiddenPosition; // Move door out of the scene
+                Debug.Log("Door unlocked and moved!");
             }
             else
             {
