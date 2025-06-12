@@ -12,6 +12,7 @@ public class RoomChanger : MonoBehaviour
         if(_connection == LevelConnection._activeConnection)
         {
             FindFirstObjectByType<PlayerMovement>().transform.position = _spawnPoint.position;
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collider)
