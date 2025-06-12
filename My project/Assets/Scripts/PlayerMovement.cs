@@ -99,6 +99,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private SpriteRenderer mysprite;
     private Rigidbody2D mybody;
+    private Animator anim;
+    private Transform mytransform;
+    private string ANIM = "WALK";
+    // private string ANIMA = "JUMP";
     private float jumpforce = 10f;
     private bool isGrounded = false;
     private int jumpCount = 0;
@@ -115,12 +119,15 @@ public class PlayerMovement : MonoBehaviour
     {
         mysprite = GetComponent<SpriteRenderer>();
         mybody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        mytransform = GetComponent<Transform>();
     }
 
     void Update()
     {
         Move();
         HandleJump();
+        UpdateAnimationState();
     }
 
     private void Move()
@@ -133,14 +140,19 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             movement = new Vector3(moveInput.x, 0f, 0f) * moveSpeed * Time.deltaTime;
+
         }
 
         transform.position += movement;
 
         if (moveInput.x < 0)
+        {
             mysprite.flipX = true;
+        }
         else if (moveInput.x > 0)
+        {
             mysprite.flipX = false;
+        }
     }
 
     private void HandleJump()
@@ -148,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
         if (isMaze) return;
 
         bool jumpPressed = Keyboard.current[Key.W].wasPressedThisFrame || Keyboard.current[Key.UpArrow].wasPressedThisFrame;
+
 
         if (jumpPressed && jumpCount < maxJumps)
         {
@@ -172,4 +185,27 @@ public class PlayerMovement : MonoBehaviour
             jumpCount = 0; // Reset jump count on ground
         }
     }
+
+    private void UpdateAnimationState()
+{
+        
+        if (moveInput.x != 0)
+        {
+            // anim.SetBool("JUMP", false);
+            anim.SetBool("WALK", true);
+            // Vector3 scale = mytransform.localScale;
+            // scale.x = 1f;
+            // scale.y = 1f;
+            // mytransform.localScale = scale;
+        }
+        else
+        {
+            // anim.SetBool("JUMP", false);
+            anim.SetBool("WALK", false);
+            // Vector3 scale = mytransform.localScale;
+            // scale.x = 1f;
+            // scale.y = 1f;
+            // mytransform.localScale = scale;
+        }
+}
 }
