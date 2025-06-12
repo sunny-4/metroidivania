@@ -125,12 +125,8 @@ public class PlayerMovement : MonoBehaviour
         if (isMaze)
         {
             mybody.gravityScale = 0;
-            Debug.Log("Maze mode active: Gravity disabled");
         }
-        else
-        {
-            Debug.Log("Normal mode: Gravity enabled");
-        }
+        
     }
 
 
@@ -139,7 +135,6 @@ public class PlayerMovement : MonoBehaviour
         if (isMaze && mybody.gravityScale != 0)
         {
             mybody.gravityScale = 0;
-            Debug.Log("Gravity forced to 0 in Update()");
         }
 
         Move();
