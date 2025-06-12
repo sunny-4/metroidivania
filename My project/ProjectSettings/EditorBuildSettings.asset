@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/load room.unity
     guid: a8fbf72b04f8240c79fc48856f2217c1
   - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: 54e79d91f94c34a4e8806059149ec035
+  - enabled: 1
     path: Assets/Scenes/Store Room.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
