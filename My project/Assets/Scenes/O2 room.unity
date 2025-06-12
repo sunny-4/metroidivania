@@ -4270,8 +4270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c9f1384b2fd574e919bbd8078f9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  doorID: 3
   keyID: Maze
+  hiddenPosition: {x: 9999, y: 9999, z: 0}
 --- !u!61 &297382003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4327,8 +4328,8 @@ Transform:
   m_GameObject: {fileID: 297382001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.6, y: -17.25, z: 0}
-  m_LocalScale: {x: 1.7, y: 1, z: 1}
+  m_LocalPosition: {x: 51.3, y: -17.25, z: 0}
+  m_LocalScale: {x: -1.7, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 268320528}
@@ -13872,7 +13873,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1000
+      value: 231.63995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalScale.y
@@ -13880,15 +13881,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 400
+      value: -36.964928
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.65
+      value: 44.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.1
+      value: -14.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalPosition.z

@@ -4860,7 +4860,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &368240271
 MonoBehaviour:
@@ -4874,8 +4874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c9f1384b2fd574e919bbd8078f9092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  doorID: 4
   keyID: No Idea
+  hiddenPosition: {x: 9999, y: 9999, z: 0}
 --- !u!4 &368240272
 Transform:
   m_ObjectHideFlags: 0
@@ -12924,7 +12925,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1912420605
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2274409822922075555, guid: 912457f60650e4c45a1d204aba7312a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19735,7 +19736,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1912420605
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2274409822922075555, guid: 912457f60650e4c45a1d204aba7312a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19891,27 +19892,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 158.06999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 800
+      value: 421.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 400
+      value: 210.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.03
+      value: -9.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 6.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.0141
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       propertyPath: m_LocalRotation.w
