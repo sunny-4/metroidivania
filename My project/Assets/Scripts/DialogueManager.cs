@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
- 
+using UnityEngine.InputSystem;
+
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
- 
+
     public Image characterIcon;
     public GameObject dialoguePanel;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
- 
+
     private Queue<DialogueLine> lines;
-    
+
     public bool isDialogueActive = false;
- 
+
     public float typingSpeed = 0.2f;
- 
+
     public Animator animator;
- 
-    
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -47,13 +48,13 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextDialogueLine();
     }
-    
- 
+
+
     public void DisplayNextDialogueLine()
     {
         if (lines.Count == 0)
         {
-            dialoguePanel.SetActive(false);
+
             EndDialogue();
             return;
         }
@@ -67,7 +68,7 @@ public class DialogueManager : MonoBehaviour
 
         StartCoroutine(TypeSentence(currentLine));
     }
- 
+
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
         dialogueArea.text = "";
@@ -77,13 +78,29 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
     }
- 
+
     void EndDialogue()
     {
         isDialogueActive = false;
-        dialoguePanel.SetActive(false);
+
         animator.Play("hide");
     }
+
+    void Update()
+    {
+        if (isDialogueActive && Keyboard.current[Key.Space].wasPressedThisFrame)
+        {
+            DisplayNextDialogueLine();
+        }
+
+        if (!isDialogueActive && Keyboard.current[Key.Space].wasPressedThisFrame)
+        {
+            dialoguePanel.SetActive(false);
+        }
+
+    }
+
+
 }
  
 
