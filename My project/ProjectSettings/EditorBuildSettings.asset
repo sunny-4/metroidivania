@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: 32e030d523a8349748d6f3331c3ebe1a
+  - enabled: 1
     path: Assets/Scenes/load room.unity
     guid: a8fbf72b04f8240c79fc48856f2217c1
   - enabled: 1
@@ -42,8 +45,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Casual room.unity
     guid: 380a4fa22158947bd9e156a2af9ccfa2
   - enabled: 1
-    path: Assets/Scenes/Main menu.unity
-    guid: 32e030d523a8349748d6f3331c3ebe1a
+    path: Assets/Scenes/Game Over.unity
+    guid: b88baa72767a9e445b95c0c6e2f0985f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 8790c1174dd4ab74c9dc25a48ee6ad6a, type: 3}
   m_UseUCBPForAssetBundles: 0
