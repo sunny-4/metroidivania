@@ -121,10 +121,27 @@ public class PlayerMovement : MonoBehaviour
         mybody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         mytransform = GetComponent<Transform>();
+
+        if (isMaze)
+        {
+            mybody.gravityScale = 0;
+            Debug.Log("Maze mode active: Gravity disabled");
+        }
+        else
+        {
+            Debug.Log("Normal mode: Gravity enabled");
+        }
     }
+
 
     void Update()
     {
+        if (isMaze && mybody.gravityScale != 0)
+        {
+            mybody.gravityScale = 0;
+            Debug.Log("Gravity forced to 0 in Update()");
+        }
+
         Move();
         HandleJump();
         UpdateAnimationState();
