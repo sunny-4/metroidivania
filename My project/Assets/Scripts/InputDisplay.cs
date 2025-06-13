@@ -9,11 +9,18 @@ public class InputDisplay : MonoBehaviour
     public TMP_Text displayText;
     public bool repair = false;
 
+
+    private GameObject playerObject;
+    void Start()
+    {
+        playerObject = GameObject.FindGameObjectWithTag("Player");
+    }
     void Update()
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-             SceneManager.LoadScene("O2 room");
+            SceneTransitionManager.comingFromScene = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene("O2 room");
         }
     }
     public void DisplayInput()
@@ -25,7 +32,7 @@ public class InputDisplay : MonoBehaviour
         }
         else
         {
-            displayText.text = inputField.text + "is the wrong password.";
+            displayText.text = inputField.text + " is the wrong password.";
         }
     }
 }

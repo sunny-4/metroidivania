@@ -2197,6 +2197,50 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!1 &146208699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 146208701}
+  - component: {fileID: 146208700}
+  m_Layer: 0
+  m_Name: spawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &146208700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146208699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea4bb4777f8b4f889ee7ee96bfdbb34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &146208701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146208699}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.42881, y: -4.46401, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &158367954
 GameObject:
   m_ObjectHideFlags: 0
@@ -12808,11 +12852,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4921542415097071382, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 4921542415097071382, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.51
+      value: 4.27
       objectReference: {fileID: 0}
     - target: {fileID: 4921542415097071382, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24096,3 +24140,4 @@ SceneRoots:
   - {fileID: 348344822}
   - {fileID: 1838875938}
   - {fileID: 998695174}
+  - {fileID: 146208701}
