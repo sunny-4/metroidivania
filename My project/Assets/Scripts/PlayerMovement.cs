@@ -121,10 +121,22 @@ public class PlayerMovement : MonoBehaviour
         mybody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         mytransform = GetComponent<Transform>();
+
+        if (isMaze)
+        {
+            mybody.gravityScale = 0;
+        }
+        
     }
+
 
     void Update()
     {
+        if (isMaze && mybody.gravityScale != 0)
+        {
+            mybody.gravityScale = 0;
+        }
+
         Move();
         HandleJump();
         UpdateAnimationState();
@@ -159,13 +171,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isMaze) return;
 
-        bool jumpPressed = Keyboard.current[Key.W].wasPressedThisFrame || Keyboard.current[Key.UpArrow].wasPressedThisFrame;
+        bool jumpPressed = Keyboard.current[Key.W].wasPressedThisFrame || Keyboard.current[Key.UpArrow].wasPressedThisFrame || Keyboard.current[Key.S].wasPressedThisFrame || Keyboard.current[Key.DownArrow].wasPressedThisFrame;
 
 
         if (jumpPressed && jumpCount < maxJumps)
         {
             mybody.linearVelocity = new Vector2(mybody.linearVelocity.x, 0f); // Cancel upward/downward momentum
-            mybody.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
+            if(Keyboard.current[Key.W].wasPressedThisFrame || Keyboard.current[Key.UpArrow].wasPressedThisFrame)
+                mybody.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
+            else
+                mybody.AddForce(new Vector2(0f, -1*jumpforce), ForceMode2D.Impulse);
             jumpCount++;
             isGrounded = false;
         }

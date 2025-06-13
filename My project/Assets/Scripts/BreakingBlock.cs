@@ -21,7 +21,7 @@ public class BreakingBlock: MonoBehaviour
         {
             playerRb = player.GetComponent<Rigidbody2D>();
         }
-
+       
         // Check if block was broken earlier
         if (PlayerPrefs.GetInt("BlockBroken_" + blockID, 0) == 1)
         {

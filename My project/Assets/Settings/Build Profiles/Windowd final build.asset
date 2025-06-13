@@ -44,6 +44,8 @@ MonoBehaviour:
     m_path: Assets/Scenes/Spaceship Storage and Control Room.unity
   - m_enabled: 1
     m_path: Assets/Scenes/Game Over.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Introduction.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []
