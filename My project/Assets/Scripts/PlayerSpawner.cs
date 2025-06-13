@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 public class PlayerSpawner : MonoBehaviour
 {
     private GameObject playerObject;
-        
-    
+
+
     void Start()
     {
         playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -19,5 +19,10 @@ public class PlayerSpawner : MonoBehaviour
         {
             playerObject.transform.position = new Vector3(52, -7, 0);
         }
+        else if (fromScene == "Camera room")
+        {
+            playerObject.transform.position = new Vector3(37, 3, 0);
+        }
+
     }
 }

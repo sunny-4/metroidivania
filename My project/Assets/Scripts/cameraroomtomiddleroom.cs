@@ -11,6 +11,7 @@ public class cameraroomtomiddleroom : MonoBehaviour
     {
         if (Keyboard.current[Key.B].wasPressedThisFrame)
         {
+            SceneTransitionManager.comingFromScene = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("Middle room 2");
 
         }
