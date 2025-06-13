@@ -1265,7 +1265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1742960084}
-  - component: {fileID: 1742960083}
+  - component: {fileID: 1742960085}
   m_Layer: 0
   m_Name: scriptobject
   m_TagString: Untagged
@@ -1273,31 +1273,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1742960083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742960082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd247c9a21f03443f80b110c03440a45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageSlots:
-  - {fileID: 1783480567}
-  - {fileID: 18667444}
-  - {fileID: 631392748}
-  - {fileID: 1309579268}
-  sprites:
-  - {fileID: -4690501345743981184, guid: 7b226ec13c263404dac8c5953b3eb0c3, type: 3}
-  - {fileID: 2850909492282779331, guid: fe8d820656cc24e7e8dcdf0a5b25bc8f, type: 3}
-  - {fileID: -129229961102408934, guid: 05472f84573424002a60734d7b91e6be, type: 3}
-  - {fileID: -3707752327531822417, guid: 8cb42717f60d74d33a6b7afed4d3c66c, type: 3}
-  - {fileID: -8438501990494840966, guid: 992246d2ea8224a2292cbe52c143a483, type: 3}
-  conditionSlotIndex: 2
-  playerInventory: {fileID: 203890602}
 --- !u!4 &1742960084
 Transform:
   m_ObjectHideFlags: 0
@@ -1313,6 +1288,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742960085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742960082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf94617f0e90a424daccc9b99bb566ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageSlots:
+  - {fileID: 1783480567}
+  - {fileID: 18667444}
+  - {fileID: 631392748}
+  - {fileID: 1309579268}
+  sprites:
+  - {fileID: -3707752327531822417, guid: 8cb42717f60d74d33a6b7afed4d3c66c, type: 3}
+  - {fileID: -4690501345743981184, guid: 7b226ec13c263404dac8c5953b3eb0c3, type: 3}
+  - {fileID: -129229961102408934, guid: 05472f84573424002a60734d7b91e6be, type: 3}
+  - {fileID: 2850909492282779331, guid: fe8d820656cc24e7e8dcdf0a5b25bc8f, type: 3}
+  - {fileID: -8438501990494840966, guid: 992246d2ea8224a2292cbe52c143a483, type: 3}
+  conditionSlotIndex: 2
 --- !u!1 &1745904969
 GameObject:
   m_ObjectHideFlags: 0
