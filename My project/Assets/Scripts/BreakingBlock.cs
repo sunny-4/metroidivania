@@ -26,7 +26,7 @@ public class BreakingBlock : MonoBehaviour
         if (PlayerPrefs.GetInt("BlockBroken_" + blockID, 0) == 1)
         {
             transform.position = new Vector3(150f, -4.97f, 0); // Or disable if preferred
-            Debug.Log("Here!");
+            
         }
     }
 

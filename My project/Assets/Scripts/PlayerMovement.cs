@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpforce = 10f;
     private bool isGrounded = false;
     private int jumpCount = 0;
-    private int maxJumps = 2; // Allows 1 jump from ground + 1 in air
+    public static int maxJumps = 1; // Allows 1 jump from ground + 1 in air
 
     [SerializeField] private bool isMaze = false;
 
@@ -185,11 +185,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
 
-        // Optional: Fast fall
-        if ((Keyboard.current[Key.S].wasPressedThisFrame || Keyboard.current[Key.DownArrow].wasPressedThisFrame) && isGrounded)
-        {
-            mybody.AddForce(new Vector2(0f, -jumpforce), ForceMode2D.Impulse);
-        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
