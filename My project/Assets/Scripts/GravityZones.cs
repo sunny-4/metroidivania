@@ -17,10 +17,12 @@ public class GravityZones : MonoBehaviour
         if ((x > -4.07 && x < 1.93) || (x > -37.09 && x < -12.99))
         {
             Physics2D.gravity = new Vector2(0, gravityStrength);
+            playerObject.GetComponent<SpriteRenderer>().flipY = true;
         }
         else
         {
             Physics2D.gravity = new Vector2(0, -1 * gravityStrength);
+            playerObject.GetComponent<SpriteRenderer>().flipY = false;
         }
     }
 }
