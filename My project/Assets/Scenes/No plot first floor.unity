@@ -15354,6 +15354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7709573101059021455, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
