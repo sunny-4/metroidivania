@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreakingBlock: MonoBehaviour
+public class BreakingBlock : MonoBehaviour
 {
     public string blockID; // Set this uniquely for each block in Inspector
 
@@ -21,11 +21,12 @@ public class BreakingBlock: MonoBehaviour
         {
             playerRb = player.GetComponent<Rigidbody2D>();
         }
-       
+
         // Check if block was broken earlier
         if (PlayerPrefs.GetInt("BlockBroken_" + blockID, 0) == 1)
         {
             transform.position = new Vector3(150f, -4.97f, 0); // Or disable if preferred
+            Debug.Log("Here!");
         }
     }
 
