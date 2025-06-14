@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Casual room.unity
     guid: 380a4fa22158947bd9e156a2af9ccfa2
   - enabled: 1
+    path: Assets/Scenes/You Won.unity
+    guid: 89a85babd16e94dfdb6c3552b3aa3fa7
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: b88baa72767a9e445b95c0c6e2f0985f
   m_configObjects:

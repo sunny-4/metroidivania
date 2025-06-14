@@ -4509,6 +4509,7 @@ GameObject:
   - component: {fileID: 297382004}
   - component: {fileID: 297382003}
   - component: {fileID: 297382002}
+  - component: {fileID: 297382005}
   m_Layer: 0
   m_Name: Door Pivot
   m_TagString: Untagged
@@ -4593,6 +4594,21 @@ Transform:
   - {fileID: 268320528}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &297382005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297382001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ab1939123b4775b28a7a7d8718d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1192790553}
+  KeyCollectSound: {fileID: 8300000, guid: 9124f81f016ae4ea08565f38c1de9f94, type: 3}
+  DoorUnlockSound: {fileID: 8300000, guid: f9c83d121df0b4f52ad979a7b1375e82, type: 3}
 --- !u!1 &300919260
 GameObject:
   m_ObjectHideFlags: 0
@@ -14482,6 +14498,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 937774950}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c797906b40bfc2741995a92d549358a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937774952}
   m_SourcePrefab: {fileID: 100100000, guid: c797906b40bfc2741995a92d549358a8, type: 3}
 --- !u!1 &937774949 stripped
 GameObject:
@@ -14547,6 +14566,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyID: O2 Room
+--- !u!114 &937774952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937774949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ab1939123b4775b28a7a7d8718d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1192790553}
+  KeyCollectSound: {fileID: 8300000, guid: 4998b62aae68d48a5a84a1880fe4f502, type: 3}
+  DoorUnlockSound: {fileID: 8300000, guid: f9c83d121df0b4f52ad979a7b1375e82, type: 3}
 --- !u!4 &949006496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4491860940349172996, guid: 8bf3dac96d322f14d8a7804aee79d880, type: 3}
@@ -17774,6 +17808,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1192790553 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1002623031730716562, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
+  m_PrefabInstance: {fileID: 1120829402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1196293930
 GameObject:
   m_ObjectHideFlags: 0

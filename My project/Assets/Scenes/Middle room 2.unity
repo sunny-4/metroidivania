@@ -12114,7 +12114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4921542415097071382, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.88
+      value: 22.1
       objectReference: {fileID: 0}
     - target: {fileID: 4921542415097071382, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12165,6 +12165,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
+--- !u!82 &256414092 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1002623031730716562, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
+  m_PrefabInstance: {fileID: 256414091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &256714896
 GameObject:
   m_ObjectHideFlags: 0
@@ -34976,6 +34981,7 @@ GameObject:
   - component: {fileID: 757535388}
   - component: {fileID: 757535387}
   - component: {fileID: 757535386}
+  - component: {fileID: 757535389}
   m_Layer: 0
   m_Name: Door Pivot
   m_TagString: Untagged
@@ -35060,6 +35066,21 @@ Transform:
   - {fileID: 1060159561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757535389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757535385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ab1939123b4775b28a7a7d8718d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 256414092}
+  KeyCollectSound: {fileID: 8300000, guid: 4998b62aae68d48a5a84a1880fe4f502, type: 3}
+  DoorUnlockSound: {fileID: 8300000, guid: f9c83d121df0b4f52ad979a7b1375e82, type: 3}
 --- !u!1 &758026268
 GameObject:
   m_ObjectHideFlags: 0
@@ -66051,6 +66072,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c797906b40bfc2741995a92d549358a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1519152293}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c797906b40bfc2741995a92d549358a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1519152295}
   m_SourcePrefab: {fileID: 100100000, guid: c797906b40bfc2741995a92d549358a8, type: 3}
 --- !u!1 &1519152292 stripped
 GameObject:
@@ -66116,6 +66140,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.013392208, y: 0.004241078}
   m_EdgeRadius: 0
+--- !u!114 &1519152295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519152292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ab1939123b4775b28a7a7d8718d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 256414092}
+  KeyCollectSound: {fileID: 8300000, guid: 4998b62aae68d48a5a84a1880fe4f502, type: 3}
+  DoorUnlockSound: {fileID: 8300000, guid: f9c83d121df0b4f52ad979a7b1375e82, type: 3}
 --- !u!1 &1521651699
 GameObject:
   m_ObjectHideFlags: 0
