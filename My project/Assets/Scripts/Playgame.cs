@@ -127,6 +127,11 @@ public class Playgame : MonoBehaviour
         SaveManager.DeleteSave(2);
     }
 
+    public void OpenMainMenu()
+    {
+        SceneManager.LoadScene("Main menu");
+    }
+
     // public void Savegame()
     // {
     //     if (slot == 1)

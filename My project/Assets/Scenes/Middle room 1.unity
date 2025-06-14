@@ -25934,6 +25934,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
+--- !u!82 &1612771382 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1002623031730716562, guid: 0c14d4c30f5444bb48ce720a99ea154a, type: 3}
+  m_PrefabInstance: {fileID: 1612771381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1624939333
 GameObject:
   m_ObjectHideFlags: 0
@@ -30355,6 +30360,7 @@ GameObject:
   - component: {fileID: 1928399234}
   - component: {fileID: 1928399233}
   - component: {fileID: 1928399235}
+  - component: {fileID: 1928399236}
   m_Layer: 0
   m_Name: DoorPivot
   m_TagString: Untagged
@@ -30439,6 +30445,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1928399236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928399231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ab1939123b4775b28a7a7d8718d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1612771382}
+  KeyCollectSound: {fileID: 8300000, guid: 4998b62aae68d48a5a84a1880fe4f502, type: 3}
+  DoorUnlockSound: {fileID: 8300000, guid: f9c83d121df0b4f52ad979a7b1375e82, type: 3}
 --- !u!1 &1931740709
 GameObject:
   m_ObjectHideFlags: 0
