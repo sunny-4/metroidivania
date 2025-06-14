@@ -36,6 +36,8 @@ public class Portal : MonoBehaviour
 
                 //Debug.Log("Oops! Current = " + currentNumber+", Sequence ="+ sequenceNumber);
             }
+        GetComponent<PortalSoundEffects>().EnterPortal();
         }
+
     }
 }

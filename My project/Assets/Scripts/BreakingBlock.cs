@@ -86,6 +86,7 @@ public class BreakingBlock: MonoBehaviour
         }
 
         GetComponent<SpriteRenderer>().sprite = sprites[jumpCount];
+        GetComponent<BreakingBlockSoundEffect>().BlockBreakSound();
         jumpCount++;
         playerWasOnButton = true;
     }
