@@ -21624,7 +21624,7 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Robot
-        icon: {fileID: -1689862890822862067, guid: 30ca707ec69354df79f71451bfcd9a0a, type: 3}
+        icon: {fileID: -8140714421586273972, guid: 6f599acaa79524c6ba3e6a5c0f46c418, type: 3}
       line: I must find the Prison!
 --- !u!4 &1898286266
 Transform:

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b8b9311e80c0bac47847c51e6ff6d447
+guid: b81c889d0aa9242bca32f129e8f5b371
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2214683806062304926
-    second: orb_0
+      213: 5061522171959080081
+    second: captain icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,12 +139,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orb_0
+      name: captain icon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 449
+        width: 450
         height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9e572e00332cbe10800000000000000
-      internalID: 2214683806062304926
+      spriteID: 194726a29932e3640800000000000000
+      internalID: 5061522171959080081
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      orb_0: 2214683806062304926
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

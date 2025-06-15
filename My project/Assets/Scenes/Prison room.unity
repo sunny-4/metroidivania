@@ -33549,16 +33549,16 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Captain
-        icon: {fileID: 431025507609398009, guid: a998436e51ccf444b8de78b9cec288fe, type: 3}
+        icon: {fileID: 5061522171959080081, guid: b81c889d0aa9242bca32f129e8f5b371, type: 3}
       line: Thank goodness, I thought that the corrupted robot had destroyed you
         as well.
     - character:
         name: Robot
-        icon: {fileID: -1689862890822862067, guid: 30ca707ec69354df79f71451bfcd9a0a, type: 3}
+        icon: {fileID: -8140714421586273972, guid: 6f599acaa79524c6ba3e6a5c0f46c418, type: 3}
       line: How can I save you?
     - character:
         name: Captain
-        icon: {fileID: 431025507609398009, guid: a998436e51ccf444b8de78b9cec288fe, type: 3}
+        icon: {fileID: 5061522171959080081, guid: b81c889d0aa9242bca32f129e8f5b371, type: 3}
       line: I wish it would have been that easy. The evil robot has sabotaged the
         oxygen supply. You must find the O2 room first. This is the key to middle
         room 2. The other uncertainities will slowly unfold themselves. now go!
