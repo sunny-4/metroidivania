@@ -35,6 +35,9 @@ TagManager:
   - Movebox10
   - Ladder
   - Decoy
+  - BossBullet
+  - PlayerBullet
+  - Boss
   layers:
   - Default
   - TransparentFX
