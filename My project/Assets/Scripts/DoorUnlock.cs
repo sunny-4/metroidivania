@@ -33,7 +33,8 @@ public class DoorUnlock : MonoBehaviour
             if (PlayerInventory.UseKey(keyID))
             {
                 GameStateManager.unlockedDoors.Add(doorID);
-                transform.position = hiddenPosition; // Move door out of the scene
+                transform.position = hiddenPosition;
+                GetComponent<LockandDoorSoundEffects>().DoorUnlock(); // Move door out of the scene
                 Debug.Log("Door unlocked and moved!");
             }
             else

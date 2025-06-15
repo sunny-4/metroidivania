@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpforce = 10f;
     private bool isGrounded = false;
     private int jumpCount = 0;
-    private int maxJumps = 2; // Allows 1 jump from ground + 1 in air
+    public static int maxJumps = 1; // Allows 1 jump from ground + 1 in air
 
     [SerializeField] private bool isMaze = false;
 
@@ -185,11 +185,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
 
-        // Optional: Fast fall
-        if ((Keyboard.current[Key.S].wasPressedThisFrame || Keyboard.current[Key.DownArrow].wasPressedThisFrame) && isGrounded)
-        {
-            mybody.AddForce(new Vector2(0f, -jumpforce), ForceMode2D.Impulse);
-        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -203,24 +199,75 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimationState()
 {
-        
-        if (moveInput.x != 0)
+        if (isMaze)
         {
-            // anim.SetBool("JUMP", false);
-            anim.SetBool("WALK", true);
-            // Vector3 scale = mytransform.localScale;
-            // scale.x = 1f;
-            // scale.y = 1f;
-            // mytransform.localScale = scale;
+            anim.SetBool("WALK", false);
+            if (moveInput.x < 0)
+            {
+                if (moveInput.y < 0)
+                {
+                    mytransform.rotation = Quaternion.Euler(180, 0, 0);
+                }
+                else if (moveInput.y > 0)
+                {
+                    mytransform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    mytransform.rotation = Quaternion.Euler(0, 0, 90);
+                }
+            }
+            else if (moveInput.x > 0)
+            {
+                if (moveInput.y < 0)
+                {
+                    mytransform.rotation = Quaternion.Euler(180, 0, 0);
+                }
+                else if (moveInput.y > 0)
+                {
+                    mytransform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    mytransform.rotation = Quaternion.Euler(0, 0, 270);
+                }
+            }
+            else
+            {
+                if (moveInput.y < 0)
+                {
+                    mytransform.rotation = Quaternion.Euler(180, 0, 0);
+                }
+                else if (moveInput.y > 0)
+                {
+                    mytransform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                // else
+                // {
+                //     myTransform.rotation = Quaternion.Euler(0, 0, 90);
+                // }
+            }
         }
         else
         {
-            // anim.SetBool("JUMP", false);
-            anim.SetBool("WALK", false);
-            // Vector3 scale = mytransform.localScale;
-            // scale.x = 1f;
-            // scale.y = 1f;
-            // mytransform.localScale = scale;
+            if (moveInput.x != 0)
+            {
+                // anim.SetBool("JUMP", false);
+                anim.SetBool("WALK", true);
+                // Vector3 scale = mytransform.localScale;
+                // scale.x = 1f;
+                // scale.y = 1f;
+                // mytransform.localScale = scale;
+            }
+            else
+            {
+                // anim.SetBool("JUMP", false);
+                anim.SetBool("WALK", false);
+                // Vector3 scale = mytransform.localScale;
+                // scale.x = 1f;
+                // scale.y = 1f;
+                // mytransform.localScale = scale;
+            }
         }
 }
 }

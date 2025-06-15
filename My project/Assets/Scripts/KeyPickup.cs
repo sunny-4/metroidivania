@@ -16,6 +16,7 @@ public class KeyPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            GetComponent<LockandDoorSoundEffects>().KeyCollect();
             PlayerInventory.AddKey(keyID);
             Destroy(gameObject);
         }
