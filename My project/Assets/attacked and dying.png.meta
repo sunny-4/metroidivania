@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      attacked and dying_0: -8650967283504559289
+      attacked and dying_1: 748115150143504677
+      attacked and dying_10: -2447497703346560577
+      attacked and dying_2: -4551761815946975248
+      attacked and dying_3: 8771004715007024301
+      attacked and dying_4: 6157512221677435305
+      attacked and dying_5: -7109381104435876026
+      attacked and dying_6: -3027215895887120656
+      attacked and dying_7: 1105559801231688767
+      attacked and dying_8: -5577655570799503666
+      attacked and dying_9: 8620749288575168572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
