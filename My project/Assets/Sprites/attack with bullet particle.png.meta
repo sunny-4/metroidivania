@@ -1,0 +1,892 @@
+fileFormatVersion: 2
+guid: cd33dfda8b560b04c961fd0dba42e297
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3855758672806428296
+    second: attack with bullet particle_0
+  - first:
+      213: 1597811511816748680
+    second: attack with bullet particle_1
+  - first:
+      213: -1125406248302235751
+    second: attack with bullet particle_2
+  - first:
+      213: -2441523833524252686
+    second: attack with bullet particle_3
+  - first:
+      213: 5783288359664712963
+    second: attack with bullet particle_4
+  - first:
+      213: 3256492983875176724
+    second: attack with bullet particle_5
+  - first:
+      213: -1965137115697386319
+    second: attack with bullet particle_6
+  - first:
+      213: -5350234387877375463
+    second: attack with bullet particle_7
+  - first:
+      213: 3278518727776544508
+    second: attack with bullet particle_8
+  - first:
+      213: -2258123762290284635
+    second: attack with bullet particle_9
+  - first:
+      213: -680171314253974550
+    second: attack with bullet particle_10
+  - first:
+      213: -8462113949606630697
+    second: attack with bullet particle_11
+  - first:
+      213: 4115472053736036191
+    second: attack with bullet particle_12
+  - first:
+      213: 6122464200423152468
+    second: attack with bullet particle_13
+  - first:
+      213: 4867241984193472617
+    second: attack with bullet particle_14
+  - first:
+      213: 1876260481188295118
+    second: attack with bullet particle_15
+  - first:
+      213: -4171399980003035008
+    second: attack with bullet particle_16
+  - first:
+      213: -6717393240211390339
+    second: attack with bullet particle_17
+  - first:
+      213: -8313565906966300794
+    second: attack with bullet particle_18
+  - first:
+      213: -4514174329757262600
+    second: attack with bullet particle_19
+  - first:
+      213: 2246798450314852955
+    second: attack with bullet particle_20
+  - first:
+      213: -1197753645898604810
+    second: attack with bullet particle_21
+  - first:
+      213: -9119346831310013071
+    second: attack with bullet particle_22
+  - first:
+      213: -3822329341824468046
+    second: attack with bullet particle_23
+  - first:
+      213: -3014615733903669829
+    second: attack with bullet particle_24
+  - first:
+      213: 7287664351127426839
+    second: attack with bullet particle_25
+  - first:
+      213: 3720303841638024162
+    second: attack with bullet particle_26
+  - first:
+      213: 1940977420422627145
+    second: attack with bullet particle_27
+  - first:
+      213: 264444418350671460
+    second: attack with bullet particle_28
+  - first:
+      213: -6938043075141870771
+    second: attack with bullet particle_29
+  - first:
+      213: -8758791530220707376
+    second: attack with bullet particle_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attack with bullet particle_0
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1593
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871cdbf6ae79d7ac0800000000000000
+      internalID: -3855758672806428296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_1
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1493
+        width: 127
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88efddbba119c2610800000000000000
+      internalID: 1597811511816748680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_2
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1493
+        width: 120
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fa0f5daf0c160f0800000000000000
+      internalID: -1125406248302235751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_3
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 1493
+        width: 140
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff03285207fd1ed0800000000000000
+      internalID: -2441523833524252686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_4
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1493
+        width: 120
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d77773f1e524050800000000000000
+      internalID: 5783288359664712963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_5
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 1493
+        width: 127
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4198e6d7d13613d20800000000000000
+      internalID: 3256492983875176724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_6
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1256
+        width: 122
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bcebeb743e6ab4e0800000000000000
+      internalID: -1965137115697386319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_7
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1256
+        width: 139
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9125d75cb2620c5b0800000000000000
+      internalID: -5350234387877375463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_8
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1257
+        width: 174
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6269e9963af7d20800000000000000
+      internalID: 3278518727776544508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_9
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1256
+        width: 146
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7a1d9f66889a0e0800000000000000
+      internalID: -2258123762290284635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_10
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1256
+        width: 114
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae33b7b1bcb8f86f0800000000000000
+      internalID: -680171314253974550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_11
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 326
+        width: 154
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7daa1d07238809a80800000000000000
+      internalID: -8462113949606630697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_12
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 326
+        width: 159
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57dbf537081d1930800000000000000
+      internalID: 4115472053736036191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_13
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 326
+        width: 158
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b944880cc57f450800000000000000
+      internalID: 6122464200423152468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_14
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 326
+        width: 168
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96828bffbcaeb8340800000000000000
+      internalID: 4867241984193472617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_15
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 326
+        width: 154
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1f45f77f0d90a10800000000000000
+      internalID: 1876260481188295118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_16
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 326
+        width: 150
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088f8d7b1d53c16c0800000000000000
+      internalID: -4171399980003035008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_17
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 326
+        width: 158
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d700794307607c2a0800000000000000
+      internalID: -6717393240211390339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_18
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 326
+        width: 150
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687b972dad740ac80800000000000000
+      internalID: -8313565906966300794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_19
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 326
+        width: 154
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc91ac3d5e6a51c0800000000000000
+      internalID: -4514174329757262600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_20
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 326
+        width: 81
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a3ae8594b3e2f10800000000000000
+      internalID: 2246798450314852955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_21
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 78
+        width: 81
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fed8cfa769b06fe0800000000000000
+      internalID: -1197753645898604810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_22
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 78
+        width: 115
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dbe209f52917180800000000000000
+      internalID: -9119346831310013071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 78
+        width: 115
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbfff517bb54fac0800000000000000
+      internalID: -3822329341824468046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_24
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 78
+        width: 129
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb54e5e46fee926d0800000000000000
+      internalID: -3014615733903669829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_25
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 78
+        width: 115
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7175a3b9d1cf22560800000000000000
+      internalID: 7287664351127426839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_26
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 78
+        width: 115
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e30b5902ac21a330800000000000000
+      internalID: 3720303841638024162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_27
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 78
+        width: 110
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f385d1eacbfea10800000000000000
+      internalID: 1940977420422627145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_28
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 78
+        width: 106
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46660a22cce7ba300800000000000000
+      internalID: 264444418350671460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_29
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 78
+        width: 110
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b5fcd159e17bf90800000000000000
+      internalID: -6938043075141870771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack with bullet particle_30
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 78
+        width: 115
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1ae736285827680800000000000000
+      internalID: -8758791530220707376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
