@@ -46,7 +46,10 @@ public class BossMovement : MonoBehaviour
     {
         if (!isDashing && Time.time >= nextActionTime)
         {
-            CheckPlayerProximity();
+            if (health > 40)
+            {
+                CheckPlayerProximity();
+            }
             PerformActionBasedOnHealth();
         }
     }
@@ -63,7 +66,7 @@ public class BossMovement : MonoBehaviour
 
     void Die()
     {
-        // Handle boss death (e.g., destroy the boss, trigger an event, etc.)
+        
         Destroy(gameObject);
     }
 

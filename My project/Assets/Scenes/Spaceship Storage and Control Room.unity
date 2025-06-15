@@ -7897,6 +7897,10 @@ PrefabInstance:
       propertyPath: dashSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4991462801419164256, guid: f3db9fade7a6bdd46952df7f5a02e489, type: 3}
+      propertyPath: detectionRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5285144145933451508, guid: f3db9fade7a6bdd46952df7f5a02e489, type: 3}
       propertyPath: m_Name
       value: Boss

@@ -5,6 +5,8 @@ public class BossBullet : MonoBehaviour
 {
     public float speed = 5f; // Speed of the bullet
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer
+    public Sprite rightFacingSprite; // Sprite for right-facing direction
+    public Sprite leftFacingSprite; // Sprite for left-facing direction
 
     void Start()
     {
@@ -12,10 +14,7 @@ public class BossBullet : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Flip the sprite if the bullet is moving left
-        if (speed < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
+        spriteRenderer.sprite = speed > 0 ? leftFacingSprite : rightFacingSprite;
     }
 
     void Update()

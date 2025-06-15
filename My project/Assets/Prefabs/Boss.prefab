@@ -112,12 +112,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8462113949606630697, guid: cd33dfda8b560b04c961fd0dba42e297, type: 3}
+  m_Sprite: {fileID: 6891335449918637013, guid: 4044c6dc182aaf44bba66a3de1db5118, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.54, y: 2.1600811}
+  m_Size: {x: 1.55, y: 2.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,8 +188,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.54, y: 2.1600811}
-    newSize: {x: 1.54, y: 2.1600811}
+    oldSize: {x: 1.55, y: 2.17}
+    newSize: {x: 1.55, y: 2.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -217,8 +217,8 @@ MonoBehaviour:
   firePointRight: {fileID: 5541291791885960683}
   firePointLeft: {fileID: 4664726765481216874}
   fireRate: 1
-  rightFacingSprite: {fileID: -9119346831310013071, guid: cd33dfda8b560b04c961fd0dba42e297, type: 3}
-  leftFacingSprite: {fileID: -8462113949606630697, guid: cd33dfda8b560b04c961fd0dba42e297, type: 3}
+  rightFacingSprite: {fileID: -5051077070618359629, guid: c5f8026e3a809ef49972bbf5312261da, type: 3}
+  leftFacingSprite: {fileID: 6891335449918637013, guid: 4044c6dc182aaf44bba66a3de1db5118, type: 3}
   health: 100
 --- !u!1 &5974747516505945206
 GameObject:
